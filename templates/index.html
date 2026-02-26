@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count to Five</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        .number {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Count to Five</h1>
+    <div class="number">1</div>
+    <div class="number">2</div>
+    <div class="number">3</div>
+    <div class="number">4</div>
+    <div class="number">5</div>
+    <script>
+        let numbers = document.querySelectorAll('.number');
+        numbers.forEach((number, index) => {
+            number.addEventListener('click', () => {
+                number.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
